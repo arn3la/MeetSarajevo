@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:abc="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbarPodesavanje"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="end"
+        android:background="@color/colorPrimary"
+        android:gravity="end"
+        abc:title="Podešavanje profila">
+
+        <ImageButton
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Confirmation button"
+            android:src="@drawable/ic_check_24dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="100dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="@string/RegIme"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtpodesavanjeIme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/colorSecondaryText"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorSecondaryText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="8dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="@string/LoginEmail"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtpodesavanjeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/colorSecondaryText"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorSecondaryText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="8dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="@string/LoginLozinka"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtpodesavanjeLozinka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/colorSecondaryText"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorSecondaryText" />
+
+    </LinearLayout>
+</LinearLayout>

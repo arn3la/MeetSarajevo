@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MeetSarajevo</string>
+    <string name="LoginEmail">Email</string>
+    <string name="LoginLozinka">Lozinka</string>
+    <string name="LoginSignin">PRIJAVI SE</string>
+    <string name="LoginRegistrujSe">Registruj se</string>
+    <string name="LoginNeregistrovan">Niste registrovani?</string>
+    <string name="RegIme">Ime</string>
+    <string name="RegRegistrujSe">REGISTRUJ SE</string>
+    <string name="RegPrijava">Prijavi se</string>
+    <string name="RegPitanje">Imate račun?</string>
+    <string name="PodesavanjeSacuvaj">SAČUVAJ</string>
+    <string name="NavHome">Početna</string>
+    <string name="NavHoteli">Hoteli</string>
+    <string name="NavCentri">Šoping centri</string>
+    <string name="NavRestorani">Restorani</string>
+    <string name="NavZnamenitosti">Znamenitosti</string>
+    <string name="NavDvorane">Sportske dvorane</string>
+    <string name="NavOmiljeni">Omiljeni</string>
+    <string name="NavPodesavanje">Podešavanje profila</string>
+    <string name="NavOdjava">Odjavi se</string>
+
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    tools:context="com.arnela.meetsarajevoib140265.RegistracijaActivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <!-->
+
+    -->
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:textStyle="bold"
+        android:text=" meetSarajevo"
+        android:fontFamily="cursive"
+        android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/txtIme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/RegIme"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/txtLogo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtRegIme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtIme"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        tools:textColor="#FFFFFF"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@android:color/white"
+        android:textCursorDrawable="@null"
+        />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/LoginEmail"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/edtRegIme"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtEmail"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        tools:textColor="#FFFFFF"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@android:color/white"
+        android:textCursorDrawable="@null"
+        />
+
+    <TextView
+        android:id="@+id/txtLozinka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LoginLozinka"
+        android:layout_below="@+id/edtRegEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <EditText
+        android:id="@+id/edtRegLozinka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/txtLozinka"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:paddingBottom="8dp"
+        android:textColor="#FFFFFF"
+        tools:textColor="#FFFFFF"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@android:color/white"
+        android:textCursorDrawable="@null"
+        />
+
+    <Button
+        android:id="@+id/btnRegistrujse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtRegLozinka"
+        android:text="@string/RegRegistrujSe"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_shape"
+        android:height="36dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:linksClickable="true"
+        android:id="@+id/btnLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtRegistracija"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="@string/RegPrijava"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnRegistrujse"
+        android:layout_toEndOf="@+id/txtLog"
+        android:layout_toRightOf="@+id/txtLog"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RegPitanje"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryText"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_below="@+id/btnRegistrujse"
+        android:layout_alignLeft="@+id/txtLogo"
+        android:layout_alignStart="@+id/txtLogo" />
+
+
+
+
+
+</RelativeLayout>
+
+
