@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MeetSarajevo.IB140265.iml" filepath="$PROJECT_DIR$/MeetSarajevo.IB140265.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MeetSarajevo.iml" filepath="$PROJECT_DIR$/MeetSarajevo.iml" />
+      <module fileurl="file://C:\Users\nihad\AndroidStudioProjects\MeetSarajevo\MeetSarajevo.IB140265.iml" filepath="C:\Users\nihad\AndroidStudioProjects\MeetSarajevo\MeetSarajevo.IB140265.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

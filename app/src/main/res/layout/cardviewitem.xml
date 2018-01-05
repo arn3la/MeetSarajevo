@@ -7,7 +7,7 @@
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/cv"
         android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:alpha="1"
         card_view:cardBackgroundColor="#FFFFFF"
@@ -20,14 +20,15 @@
 
             <ImageView
                 android:id="@+id/img_location"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/no_image_place_holder"/>
+                android:layout_alignTop="@+id/location_name"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image_place_holder" />
 
             <TextView
                 android:id="@+id/location_name"
@@ -35,7 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="15dp"
+                android:text="Location name"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -48,36 +50,74 @@
                 android:layout_below="@+id/location_name"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:text="LOCATION CATEGORY"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="14sp" />
 
             <RatingBar
                 android:id="@+id/starProsjecna"
+                style="?android:attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@+id/img_location"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:numStars="5"
-                android:stepSize="0.5"
-                android:theme="@style/RatingBar"
-                android:isIndicator="true"
+                android:layout_alignBottom="@+id/star_ocjena"
+                android:layout_toEndOf="@+id/txtProsjecna"
+                android:layout_toRightOf="@+id/txtProsjecna"
                 android:clickable="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
-                />
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar" />
 
             <TextView
                 android:id="@+id/star_ocjena"
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/img_location"
+                android:layout_alignLeft="@+id/img_location"
+                android:layout_alignRight="@+id/img_location"
+                android:layout_alignStart="@+id/img_location"
+                android:layout_below="@+id/img_location"
+                android:background="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Top preporuka"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="15dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/location_category"
+                android:layout_alignLeft="@+id/location_category"
+                android:layout_alignRight="@+id/location_category"
+                android:layout_alignStart="@+id/location_category"
+                android:layout_below="@+id/location_category"
+                android:layout_marginRight="16dp"
+                android:ems="2"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:layout_marginTop="10dp"
+                android:text="Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a."
+                android:textColor="@color/colorSecondaryText"
+                />
+
+            <TextView
+                android:id="@+id/txtProsjecna"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/starProsjecna"
-                android:layout_toEndOf="@+id/starProsjecna"
-                android:layout_toRightOf="@+id/starProsjecna"
+                android:layout_alignLeft="@+id/txtDescription"
+                android:layout_alignStart="@+id/txtDescription"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="3"
                 android:textColor="@color/colorSecondaryText"
-                android:textSize="24sp" />
+                android:textSize="12sp" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>

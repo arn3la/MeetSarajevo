@@ -5,8 +5,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.AbsListView;
 import android.widget.ImageView;
 import android.widget.RatingBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.arnela.meetsarajevoib140265.R;
@@ -18,6 +21,8 @@ public class RecyclerItemViewHolder extends RecyclerView.ViewHolder implements V
     private TextView ObjektNaziv;
     private TextView ObjektKategorija;
     private TextView ObjektOcjena;
+    private TextView ObjektDescription;
+    private TextView ObjektProsjecna;
     private ImageView ObjektSlika;
     private RatingBar ProsjecnaOcjena;
     private WeakReference<IClickItem> listenerRef;
@@ -29,9 +34,11 @@ public class RecyclerItemViewHolder extends RecyclerView.ViewHolder implements V
 
         ObjektNaziv = (TextView) parent.findViewById(R.id.location_name);
         ObjektKategorija = (TextView) parent.findViewById(R.id.location_category);
+        ObjektProsjecna = (TextView) parent.findViewById(R.id.txtProsjecna);
         ObjektOcjena = (TextView) parent.findViewById(R.id.star_ocjena);
         ObjektSlika = (ImageView) parent.findViewById(R.id.img_location);
         ProsjecnaOcjena = (RatingBar) parent.findViewById(R.id.starProsjecna);
+        ObjektDescription = (TextView) parent.findViewById(R.id.txtDescription);
         listenerRef = new WeakReference<>(listener);
         parent.setOnClickListener(this);
         this.parent = parent;
@@ -45,9 +52,20 @@ public class RecyclerItemViewHolder extends RecyclerView.ViewHolder implements V
     public void setObjektKategorija(String objektKategorija) {
         ObjektKategorija.setText(objektKategorija);
     }
+    public void setObjektProsjecna(String objektProsjecna) {
+        ObjektProsjecna.setText(objektProsjecna);
+    }
+
+    public void setObjektDescription(String objektDescription) {
+        ObjektDescription.setText(objektDescription);
+    }
 
     public void setObjektOcjena(String objektOcjena) {
         ObjektOcjena.setText(objektOcjena);
+    }
+
+    public void setObjektOcjenaVisibility(int visibility) {
+        ObjektOcjena.setVisibility(visibility);
     }
 
     public void setObjektSlika(final String objektSlika) {

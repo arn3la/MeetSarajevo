@@ -31,8 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin">
+        >
 
         <TextView
             android:id="@+id/detalji_location_name"
@@ -41,7 +40,10 @@
             android:layout_marginTop="15dp"
             android:textColor="@color/colorSecondaryText"
             android:textSize="22sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            />
 
 
         <TextView
@@ -51,7 +53,10 @@
             android:layout_below="@+id/detalji_location_name"
             android:layout_marginTop="5dp"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -64,6 +69,8 @@
                 android:layout_marginTop="10dp"
                 android:numStars="5"
                 android:stepSize="1.0"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
                 android:theme="@style/RatingBar" />
 
         </RelativeLayout>
@@ -78,6 +85,8 @@
             android:textSize="14sp"
             android:maxLines = "15"
             android:scrollbars="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
             />
 
     </LinearLayout>

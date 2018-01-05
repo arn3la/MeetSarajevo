@@ -1,6 +1,7 @@
 package com.arnela.meetsarajevoib140265.ListViewLokacije;
 
 import android.app.Activity;
+import android.opengl.Visibility;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,9 +38,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         holder.setObjektNaziv(itemObject.getNaziv());
         holder.setObjektKategorija(itemObject.getKategorija());
-        holder.setObjektOcjena(String.valueOf(itemObject.getProsjecnaOcjena()));
+        holder.setObjektDescription(itemObject.getOpis());
         holder.setObjektSlika(itemObject.getSlika());
         holder.setProsjecnaOcjena(itemObject.getProsjecnaOcjena());
+        holder.setObjektProsjecna(String.valueOf(itemObject.getProsjecnaOcjena()));
+
+        if(itemObject.getProsjecnaOcjena() > 4.0) {
+            holder.setObjektOcjenaVisibility(View.VISIBLE);
+            holder.setObjektOcjena("Top preporuka");
+        }
+        else {
+            holder.setObjektOcjenaVisibility(View.INVISIBLE);
+        }
     }
 
     @Override
